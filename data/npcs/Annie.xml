@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Annie" script="annie.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="138" head="116" body="87" legs="131" feet="132" addons="3"/>
+	<parameters>
+	<parameter key="message_greet" value="Greetings fellow adventurer. I can {heal} your wounds and answer your questions."/>
+	<parameter key="message_farewell" value="Good bye, young |PLAYERNAME|."/>
+	<parameter key="message_walkaway" value="See you around!"/>
+	</parameters>
+</npc>
