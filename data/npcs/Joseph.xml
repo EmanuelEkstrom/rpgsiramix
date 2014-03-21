@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Joseph" script="joseph.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="131" head="59" body="76" legs="19" feet="38" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello there, |PLAYERNAME|! Can I offer you a {trade}?"/>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value=""/>
+		<parameter key="shop_buyable" value="axe,2386,20;dagger,2379,5;hand axe,2380,8;rapier,2384,15;sabre,2385,25;scythe,2550,12;short sword,2406,30;sickle,2405,8;spear,2389,10;chain helmet,2458,52;coat,2651,8;doublet,2485,16;jacket,2650,10;leather armor,2467,25;leather helmet,2461,12;leather legs,2649,10;studded helmet,2482,63;studded shield,2526,50;wooden shield,2512,15;"/>
+        <parameter key="shop_sellable" value="axe,2386,7;bone club,2449,5;dagger,2379,2;hand axe,2380,4;hatchet,2388,25;katana,2412,35;mace,2398,30;machete,2420,6;rapier,2384,5;sabre,2385,12;scythe,2550,3;short sword,2406,10;sickle,2405,2;spear,2389,3;sword,2376,25;brass helmet,2460,22;brass shield,2511,25;chain armor,2464,40;chain helmet,2458,12;copper shield,2530,50;doublet,2485,3;leather armor,2467,5;leather boots,2643,2;leather helmet,2461,3;leather legs,2649,2;legion helmet,2480,22;plate shield,2510,40;studded armor,2484,10;studded helmet,2482,20;studded legs,2468,15;studded shield,2526,16;viking helmet,2473,25;wooden shield,2512,3;"/>    
+	</parameters>
+</npc>
