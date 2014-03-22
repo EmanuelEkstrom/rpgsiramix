@@ -9,6 +9,21 @@ function onThink()				npcHandler:onThink()					end
 
 npcHandler:addModule(FocusModule:new())
 
+function knifePlayer(cid, message, keywords, parameters, node)
+	local player = Player(cid)
+	local health = getCreatureHealth(cid)
+		if health <= getCreatureMaxHealth(cid) / 100 * 15  then
+			npcHandler:say("You look like shit! Take this knife to protect yourself.",cid)
+			doPlayerAddItem(cid, 2379)
+		else
+			npcHandler:say("You look perfect. Scammer!")
+		end
+	return true
+end
+
+local node1 = keywordHandler:addKeyword({'hurt', 'heal', 'attack'}, knifePlayer)
+	npcHandler:addModule(FocusModule:new())
+
 local function creatureSayCallback(cid, type, msg)
         if(not npcHandler:isFocused(cid)) then
                 return false
