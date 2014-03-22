@@ -12,8 +12,8 @@ npcHandler:addModule(FocusModule:new())
 function healPlayer(cid, message, keywords, parameters, node)
 	local health = getCreatureHealth(cid)
 	local player = Player(cid)
-	if health <= 30 then
-			npcHandler:say('Aleta sio "'.. getCreatureName(cid) ..'". Your wounds have been healed!', cid)
+	if health <= getCreatureMaxHealth(cid) / 100 * 15  then
+			npcHandler:say('Exura sio "'.. getCreatureName(cid) ..'". Your wounds have been healed!', cid)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			doCreatureAddHealth(cid, getCreatureMaxHealth(cid))
 		else
