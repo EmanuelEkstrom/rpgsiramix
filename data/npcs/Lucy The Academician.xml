@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Lucy The Academician" script="LucyTA.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="140" head="116" body="87" legs="87" feet="77" addons="1"/>
+<voices>
+<voice text="Please lower your voices here, it's a library!" interval2="100" margin="1" yell="no"/>
+</voices>
+ <parameters>
+        <parameter key="message_greet" value="Welcome to the academy! Can I help you?"/>
+        <parameter key="message_farewell" value="Bye."/>
+		<parameter key="message_walkaway" value="Bye." />
+        <parameter key="module_keywords" value="1" />
+    </parameters>
+</npc>
